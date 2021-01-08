@@ -93,8 +93,12 @@ h2 {
     grid-template-rows:  repeat(5, 1fr);
     justify-items: start;
     font-size: 16px;
-    margin-left: 20%;
-    margin-right: 10%;
+    /* margin-left: 20%;
+    margin-right: 10%; */
+    max-width: 600px;
+    margin: 0 auto;
+    column-gap: 60px;
+    row-gap: 10px;
 }
 
 .button {
@@ -108,16 +112,70 @@ h2 {
     box-shadow: 9px 8px 9px -7px rgba(0,0,0,0.4);
     font-weight: 700;
     font-size: 20px;
+    cursor: pointer;
 }
-
-
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: black;
     color: white;
     font-size: 12px;
-    margin-bottom: 29px;
+    margin: 0 auto ;
+    padding-bottom: 30px;
+    min-width: 320px;
+    max-width: 900px;
 }
 
+.contact {
+    display: grid;
+    grid-template-columns:  50px 1fr;
+    grid-template-rows:  repeat(4, 50px);
+    justify-items: start;
+    align-items: center;
+    margin-left: 8%;
+    /* margin-right: 20%; */
+}
+
+.contact img {
+    width: 80%;
+    height: auto;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px){
+    .h1 {
+        font-size: 24px ;
+    }
+    .h2 {
+        font-size: 40px;
+        margin: 45px;
+    }
+
+    .services
+    {
+        font-size: 32px;
+        column-gap: 120px;
+        row-gap: 15px;
+    }
+    .contact {
+        grid-template-columns:  80px 1fr;
+        grid-template-rows:  repeat(4, 80px);
+        font-size: 22px;
+        /* column-gap: 15px;
+        row-gap: 15px; */
+    }
+    .contact img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        }
+        .button {
+            display: inline-block;
+            padding: 28px;
+            margin: 70px;
+            font-size: 36px;
+            border-radius: 15px;
+            
+ }
