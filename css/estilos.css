@@ -1,3 +1,9 @@
+:root {
+    --primary-font: 'Roboto', sans-serif;
+
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +18,7 @@ a {
 
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
 }
 
 header {
@@ -20,8 +26,10 @@ header {
     justify-content: center;
     align-items: center;
     background-color: black;
-    width: 100vw;
-    height: 66px;
+    min-width: 320px;
+    max-width: 900px;
+    height: 70px;
+    margin: 0 auto;
 }
 header a {
     color: white;
@@ -31,15 +39,22 @@ header a {
 }
 
 main {
+    
+}
+
+
+.h1 {
+    position: relative;
+    margin-top: 29px ;
+    margin-bottom: 26px;
+    font-size: 16px;
+    font-weight: 400;
     display: flex;
     justify-content: center;
 }
 
-.h1 {
-    margin-top: 95px;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
+.carousel {
+    
 }
 
 
